@@ -10,16 +10,16 @@ const commands = {
   },
   'tab:new': focusedWindow => {
     if (focusedWindow) {
-      focusedWindow.rpc.emit('termgroup add req');
+      focusedWindow.rpc.emit('termgroup add req', {});
     } else {
       setTimeout(app.createWindow, 0);
     }
   },
-  'pane:splitVertical': focusedWindow => {
-    focusedWindow && focusedWindow.rpc.emit('split request vertical');
+  'pane:splitRight': focusedWindow => {
+    focusedWindow && focusedWindow.rpc.emit('split request vertical', {});
   },
-  'pane:splitHorizontal': focusedWindow => {
-    focusedWindow && focusedWindow.rpc.emit('split request horizontal');
+  'pane:splitDown': focusedWindow => {
+    focusedWindow && focusedWindow.rpc.emit('split request horizontal', {});
   },
   'pane:close': focusedWindow => {
     focusedWindow && focusedWindow.rpc.emit('termgroup close req');
@@ -100,6 +100,12 @@ const commands = {
   },
   'editor:break': focusedWindow => {
     focusedWindow && focusedWindow.rpc.emit('session break req');
+  },
+  'editor:search': focusedWindow => {
+    focusedWindow && focusedWindow.rpc.emit('session search');
+  },
+  'editor:search-close': focusedWindow => {
+    focusedWindow && focusedWindow.rpc.emit('session search close');
   },
   'cli:install': () => {
     installCLI(true);
