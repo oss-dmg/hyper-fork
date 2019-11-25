@@ -31,4 +31,4 @@ on_success:
 
 artifacts:
   - path: .\target
-  - name: hyper_build.zip
+    name: hyper_build.zip
