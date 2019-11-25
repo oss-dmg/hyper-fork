@@ -26,7 +26,7 @@ test_script:
 on_success:
   - IF %APPVEYOR_REPO_BRANCH%==canary cp build\canary.ico build\icon.ico
   - yarn run dist
-  - dir .\target\
+  - dir .\node_modules\.bin
   - ps: Get-ChildItem .\dist\squirrel-windows\*.exe | % { Push-AppveyorArtifact $_.FullName }
 
 artifacts:
