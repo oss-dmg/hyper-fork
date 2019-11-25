@@ -4255,8 +4255,9 @@ lru-cache@^4.0.1, lru-cache@^4.1.1:
     yallist "^2.1.2"
 
 macaddress@^0.2.8:
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/macaddress/-/macaddress-0.2.8.tgz#5904dc537c39ec6dbefeae902327135fa8511f12"
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/macaddress/-/macaddress-0.2.9.tgz#3579b8b9acd5b96b4553abf0f394185a86813cb3"
+  integrity sha512-k4F1JUof6cQXxNFzx3thLby4oJzXTXQueAOOts944Vqizn+Rjc2QNFenT9FJSLU1CH3PmrHRSyZs2E+Cqw+P2w==
 
 make-dir@^1.0.0:
   version "1.2.0"
@@ -4466,9 +4467,10 @@ module-not-found-error@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/module-not-found-error/-/module-not-found-error-1.0.1.tgz#cf8b4ff4f29640674d6cdd02b0e3bc523c2bbdc0"
 
-mousetrap@chabou/mousetrap#useCapture:
-  version "1.6.1"
-  resolved "https://codeload.github.com/chabou/mousetrap/tar.gz/c95eeeaafba1131dd8d35bc130d4a79b2ff9261a"
+mousetrap@^1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/mousetrap/-/mousetrap-1.6.3.tgz#80fee49665fd478bccf072c9d46bdf1bfed3558a"
+  integrity sha512-bd+nzwhhs9ifsUrC2tWaSgm24/oo2c83zaRyZQF06hYA6sANfsXHtnZ19AbbbDXCDzeH5nZBSQ4NvCjgD62tJA==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
